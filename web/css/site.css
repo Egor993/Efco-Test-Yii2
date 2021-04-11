@@ -1,0 +1,217 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+/* Таблица */
+
+hr{
+    height:1px;
+    margin-bottom: 0;
+    background-color:#333;
+}
+
+table {
+    width: 100%;
+}
+
+.table{
+    overflow-x:auto;
+    padding-left: 6px;
+	margin-top: 30px;
+	font-size: 18px;
+	border: 3px solid #fff;
+	box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}	
+
+.caption {
+    font-size: 21px; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.val {
+    padding-left: 5px;
+    border: 2px solid rgb(172, 171, 171);
+    padding-right: 65px;
+    font-size: 18px;
+}
+
+.val-2 {
+    padding: 8px; 
+    border: 2px solid rgb(172, 171, 171);
+    font-size: 18px;
+    padding-right: 11px;
+}
+
+.btn-change {
+    font-weight: bold;
+    box-shadow:  4px 8px 8px rgba(0, 0, 0, 0.125);
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-left: 4px;
+    font-size: 16px;
+}
+
+.btn-success {
+    background-color: #5cb85c;
+    color: #fff;
+    border-color: #4cae4c;
+    font-weight: bold;
+    box-shadow:  4px 8px 8px rgba(0, 0, 0, 0.125);
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-left: 4px;
+    font-size: 16px;
+}
+.btn-primary {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.success{
+    padding-top: 10px;
+    padding-left: 13px;
+    padding-right: 10px;
+    font-weight: bold;
+    color: rgb(0, 175, 9);
+    font-size: 16px;
+}
+
+.fail{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    color: rgb(204, 58, 0);
+    font-size: 16px;
+}
+
+.wrap li {
+    font-size: 18px;
+}
+
+.navbar-header a {
+    font-weight: bold;
+}
+
+@media (max-width: 1000px){
+
+	.table {
+		min-width: 1000px;
+	}
+
+    .footer {
+        min-width: 1000px;
+    }
